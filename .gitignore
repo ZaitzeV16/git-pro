@@ -33,11 +33,11 @@
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-*.idea/modules.xml
-*.idea/*.iml
-*.idea/modules
-*.iml
-*.ipr
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
 
 # CMake
 cmake-build-*/
@@ -75,13 +75,20 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-*.iml
-*modules.xml
-*.idea*
-*.ipr
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+.idea/**/sonarlint/
+
+# SonarQube Plugin
+.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator/
 
 ### Java ###
 # Compiled class file
@@ -89,9 +96,6 @@ fabric.properties
 
 # Log file
 *.log
-
-# Text files
-*.txt
 
 # BlueJ files
 *.ctxt
@@ -112,27 +116,3 @@ fabric.properties
 hs_err_pid*
 
 # End of https://www.gitignore.io/api/java,intellij
-
-
-# Created by https://www.gitignore.io/api/gradle
-# # Edit at https://www.gitignore.io/?templates=gradle
-
- ### Gradle ###
-.gradle
-build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-### Gradle Patch ###
-**/build/
-# End of https://www.gitignore.io/api/gradle
