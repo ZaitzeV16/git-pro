@@ -1,5 +1,5 @@
 public class Count {
-  public void count(){
-    System.out.println("123123");
+  public void count(int numberToPrint){
+    System.out.println(numberToPrint);
   }
 }
