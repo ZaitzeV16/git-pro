@@ -1,6 +1,6 @@
 public class Cheer {
 
-  public void cheer() {
-    System.out.println("Chama-Aragonite");
+  public void cheer(String team) {
+    System.out.println("Ahoy " + team);
   }
 }
